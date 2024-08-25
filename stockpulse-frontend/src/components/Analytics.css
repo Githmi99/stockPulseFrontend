@@ -1,0 +1,259 @@
+.analytics-page {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: 100vh;
+    overflow-y: auto;
+}
+  
+.analytics-page .content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.analytics-page .content .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Adjust spacing between cards */
+}
+  
+.analytics-page .content .card:nth-child(odd) {
+    background-color: #f0f0f0; /* Alternate background color for odd-numbered cards */
+}
+  
+.analytics-page .content .card:nth-child(even) {
+    background-color: #e0e0e0; /* Alternate background color for even-numbered cards */
+}
+  
+.analytics-page .analytics-container {
+    display: flex;
+    flex-direction: row;
+}
+  
+.analytics-page .sidebar {
+    background-color: #e8f1ff;
+    padding: 20px;
+    height: 100vh;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+  
+.analytics-page .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+  
+.analytics-page .logo {
+    font-size: 1.5em;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+  
+.analytics-page .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.analytics-page .nav-list li {
+    margin: 10px 0;
+}
+  
+.analytics-page .nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+  
+.analytics-page .nav-list li a:hover {
+    color: #4a90e2;
+}
+  
+.analytics-page .nav-list li.active a {
+    color: #4a90e2;
+    font-weight: bold;
+}
+  
+.analytics-page .main-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: calc(100% - 290px); /* Subtract sidebar width and padding */
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+  
+.analytics-page .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+  
+.analytics-page .search-bar {
+    width: 200px;
+}
+  
+.analytics-page .notification-icon {
+    font-size: 1em; /* Adjust icon size as needed */
+    margin-right: 10px;
+}
+  
+.analytics-page .company-name {
+    font-weight: bold;
+}
+  
+.analytics-page .analytics-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+  
+/* Unique styles for each card */
+.analytics-page .total-orders-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffefc4;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+  
+.analytics-page .total-orders-card h3 {
+    font-size: 1.2em;
+    color: #b37f00;
+    margin-bottom: 10px;
+}
+  
+.analytics-page .item-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #c4e1ff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+  
+.analytics-page .item-card h3 {
+    font-size: 1.2em;
+    color: #0073b3;
+    margin-bottom: 10px;
+}
+  
+.analytics-page .inventory-status-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d6f7c4;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+  
+.analytics-page .inventory-status-card h3 {
+    font-size: 1.2em;
+    color: #4b8c00;
+    margin-bottom: 10px;
+}
+  
+.analytics-page .inventory-status {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+  
+.analytics-page .inventory-details {
+    margin-left: 20px;
+}
+  
+.analytics-page .inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+.analytics-page .inventory-table th,
+.analytics-page .inventory-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+  
+.analytics-page .inventory-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+  
+/* Responsive design improvements */
+@media (max-width: 768px) {
+    .analytics-page {
+        padding: 10px;
+    }
+  
+    .analytics-page .content {
+        padding: 10px;
+    }
+  
+    .analytics-page .analytics-container {
+        flex-direction: column;
+    }
+  
+    .analytics-page .sidebar {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+  
+    .analytics-page .main-content {
+        width: 100%;
+        margin-left: 0;
+    }
+  
+    .analytics-page .header {
+        flex-direction: column;
+        align-items: start;
+    }
+  
+    .analytics-page .search-bar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+  
+    .analytics-page .notification-icon {
+        font-size: 0.8em; /* Adjust smaller size for smaller screens */
+    }
+}
+  
+/* Additional enhancements for better layout and spacing */
+.analytics-page .analytics-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+  
+.analytics-page .total-orders-card,
+.analytics-page .item-card,
+.analytics-page .inventory-status-card {
+    width: calc(33.333% - 20px); /* Three cards per row with spacing */
+    min-width: 250px; /* Ensure a minimum width for smaller screens */
+    max-width: 100%; /* Ensure cards take up full available width on smaller screens */
+}
+  
+/* Adjust pie chart size within the inventory status card */
+.analytics-page .inventory-status-card .inventory-status {
+    justify-content: center;
+}
+  
+.analytics-page .inventory-status-card .inventory-details {
+    width: 100%;
+    max-width: 300px; /* Limit the maximum width of the pie chart */
+    margin: 0 auto; /* Center the pie chart */
+}

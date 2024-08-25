@@ -1,0 +1,80 @@
+/* Make the body and html take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container adjustments */
+.purchases-container {
+  padding: 20px;
+  height: 650px; /* Set a fixed height */
+  overflow: auto; /* Handle overflow content */
+  background-color: #f0f0f0; /* Optional: Adjust background color to better see the area */
+}
+
+
+/* Other styles remain the same */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header input, .header select {
+  padding: 20px;
+  margin: 0 10px;
+  align-items: center;
+}
+
+.purchases-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  height :400px;
+  background-color: #e6ffff;
+}
+
+.purchases-table th, .purchases-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.status.unpaid {
+  background-color: #FF5733;
+  color: #003300;
+}
+
+.status.paid {
+  background-color: 	#1aff1a;
+  color: #003300;
+ 
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-btn {
+  background-color: rgb(11, 155, 73);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
